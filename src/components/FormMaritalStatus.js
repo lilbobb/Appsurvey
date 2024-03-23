@@ -87,6 +87,31 @@ const FormMaritalStatus = ({ values, handleChange, nextStep, prevStep }) => {
           </div>
           <div className="mb-4">
             <label
+              htmlFor="gender"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Gender
+            </label>
+            <select
+              id="gender"
+              name="gender"
+              onChange={handleChange("gender")}
+              value={values.gender}
+              className="border border-gray-400 px-4 py-2 rounded-md w-full"
+            >
+              <option value="">Select...</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+            {errors.gender && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.gender}
+              </p>
+            )}
+          </div>
+          <div className="mb-4">
+            <label
               htmlFor="city"
               className="block text-sm font-medium text-gray-700"
             >

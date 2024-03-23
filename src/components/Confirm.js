@@ -11,6 +11,7 @@ const Confirm = ({ values, nextStep, prevStep }) => {
     maritalStatus,
     reference,
     age,
+    gender,
     occupation,
     city,
   } = values;
@@ -48,6 +49,9 @@ const Confirm = ({ values, nextStep, prevStep }) => {
         </li>
         <li className="mb-2">
           <span className="font-bold">Age:</span> {age}
+        </li>
+        <li className="mb-2">
+          <span className="font-bold">Gender:</span> {gender}
         </li>
         <li className="mb-2">
           <span className="font-bold">Occupation:</span> {occupation}

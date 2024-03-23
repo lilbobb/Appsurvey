@@ -18,7 +18,7 @@ const Home = () => {
         </p>
         <Link
           to="/UseForm"
-          className="bg-gray-900  hover:bg-gray-700 text-gray-300 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg focus:outline-none focus:ring focus:ring-blue-500 transition duration-400 ease-in-out flex items-center"
+          className="bg-gray-900  hover:bg-gray-700 text-gray-300 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg focus:outline-none focus:ring focus:ring-blue-500 transition duration-400 ease-in-out flex items-center mb-6"
         >
           Apply for Grant
           <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
