@@ -13,6 +13,7 @@ class UserForm extends Component {
     fullName: "",
     email: "",
     age: "",
+    gender: "",
     phoneNumber: "",
     address: "",
     maritalStatus: "",
