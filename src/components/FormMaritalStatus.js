@@ -35,7 +35,7 @@ const FormMaritalStatus = ({ values, handleChange, nextStep, prevStep }) => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full">
+    <div className="flex justify-center items-center h-full mt-10 mb-10">
       <div className="w-full">
         <div className="sm:w-230 p-8">
           <h2 className="text-1xl font-roboto text-gray-800 font-bold mb-4">Marital Status</h2>

@@ -12,7 +12,7 @@ const FormPersonalDetails = ({ values, handleChange, nextStep, prevStep }) => {
   };
 
   return (
-    <div className="flex justify-center h-full items-center ">
+    <div className="flex justify-center h-full items-center mt-10 mb-10">
       <div className="w-full">
         <div className="sm:w-230 p-8">
           <h2 className="text-2xl font-roboto text-gray-800 font-bold mb-4">Personal Details</h2>
