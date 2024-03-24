@@ -7,16 +7,18 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow container mx-auto flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-6 mb-4 text-yellow-600 text-center font-mono">
+      <div className="bg-slate-300 mx-auto min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl lg:text-4xl font-bold mt-4 mb-4 text-yellow-500 text-center font-mono shadow-sm">
           Welcome to Pioneer Vision Foundation
         </h1>
-        <p className="text-lg sm:text-xl lg:text-2xl mt-4 sm:mt-8 mb-6 sm:mb-10 font-bold text-center">
+        <p className="text-2xl lg:text-xl mt-8 mb-8 sm:mb-10 text-center font-roboto">
           Connecting people to grant opportunities and assistance. <br />
-          Get up to <strong className="text-red-500">$50,000</strong> as a
-          support for for people like you.
+          Get up to <strong className="text-red-600 text-2xl">
+            $50,000
+          </strong>{" "}
+          as a support for people like you.
         </p>
         <Link
           to="/UseForm"
@@ -25,23 +27,24 @@ const Home = () => {
           Apply for Grant
           <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
         </Link>
+        <p className="mt-4 py-4 px-6 text-xs text-gray-900 font-mono text-center">
+          The Pioneer Vision Foundation is committed to supporting small
+          communities across the states. As part of our mission to empower these
+          communities, we have launched a program that provides grant and
+          giveaway opportunities to individuals from these areas.
+          <br /> The contact information collected through surveys will be used
+          solely for communication purposes related to the grant program and
+          initiatives of Pioneer Vision Foundation. We are dedicated to ensuring
+          the privacy and security of all information collected. <br /> This
+          policy is subject to periodic review and updates to ensure alignment
+          with the mission and values of Pioneer Vision Foundation. Any changes
+          will be communicated through official channels. By adhering to these
+          policies, Pioneer Vision Foundation aims to serve communities
+          effectively and empower individuals to thrive. <br />
+          Thank you for your support and participation in our mission.
+        </p>
       </div>
-      <p className="mt-4 py-4 px-6 text-xs text-gray-400 font-mono text-center">
-        The Pioneer Vision Foundation is committed to supporting small
-        communities across the states. As part of our mission to empower these
-        communities, we have launched a program that provides grant and giveaway
-        opportunities to individuals from these areas.
-        <br /> The contact information collected through surveys will be used
-        solely for communication purposes related to the grant program and
-        initiatives of Pioneer Vision Foundation. We are dedicated to ensuring
-        the privacy and security of all information collected. <br /> This
-        policy is subject to periodic review and updates to ensure alignment
-        with the mission and values of Pioneer Vision Foundation. Any changes
-        will be communicated through official channels. By adhering to these
-        policies, Pioneer Vision Foundation aims to serve communities
-        effectively and empower individuals to thrive. Thank you for your
-        support and participation in our mission.
-      </p>
+
       <Footer />
     </div>
   );

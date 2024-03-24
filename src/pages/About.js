@@ -5,11 +5,11 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 function About() {
   return (
-    <div className="bg-gradient-to-r from-blue-400 to-gray-600 text-white min-h-screen">
+    <div className="min-h-screen flex flex-col bg-gradient-to-r from-blue-400 to-gray-600 text-white">
       <Navbar />
-      <div className="container mx-auto py-8 px-4 text-center">
+      <div className="container mx-auto py-8 px-4 text-center min-h-screen flex flex-col">
         {/* Introduction section */}
-        <div className="mb-8 max-w-2xl mx-auto">
+        <div className="mb-8 max-w-2xl mx-auto shadow-sm">
           <h1 className="text-3xl font-bold mb-4 text-center text-yellow-500">
             Introduction
           </h1>
@@ -30,7 +30,7 @@ function About() {
           </p>
         </div>
         {/* References section */}
-        <div className="mb-8 max-w-2xl mx-auto">
+        <div className="mb-8 max-w-2xl mx-auto shadow-sm">
           <h1 className="text-3xl font-bold mb-4 text-center text-yellow-500">
             References
           </h1>
