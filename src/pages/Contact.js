@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow flex items-center justify-center">
+      <div className="flex-grow flex items-center justify-center mt-10 mb-10">
         <div className="w-96 bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Contact Us</h2>
           <form>
