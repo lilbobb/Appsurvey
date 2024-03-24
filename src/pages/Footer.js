@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 font-mono py-8 h-auto text-xs">
-      <div className="container mx-auto flex flex-wrap justify-around px-4">
+    <footer className="bg-black text-gray-300 font-mono py-6">
+      <div className="container mx-auto flex flex-wrap justify-between px-6">
         {/* Privacy Section */}
-        <div className="mb-4 md:mb-0">
+        <div className="mb-4 md:w-1/4">
           <h2 className="text-xl font-bold mb-2">Privacy</h2>
           <p className="text-sm">
             Your privacy is important to us. Read our{" "}
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="mb-4 md:mb-0">
+        <div className="mb-4 md:w-1/4">
           <h2 className="text-xl font-bold mb-2">Contact us</h2>
           <p className="text-sm">
             Email:{" "}
@@ -40,44 +40,48 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <ul>
-          <li>
-            <Link
-              to="/"
-              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
-            >
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/privacy"
-              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
-            >
-              Privacy
-            </Link>
-          </li>
-        </ul>
+
+        {/* Navigation Section */}
+        <div className="md:w-1/4">
+          <h2 className="text-xl font-bold mb-2">Navigation</h2>
+          <ul className="text-sm mb-2">
+            <li>
+              <Link
+                to="/"
+                className="block text-gray-100 hover:text-gray-300 py-1"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="block text-gray-100 hover:text-gray-300 py-1"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="block text-gray-100 hover:text-gray-300 py-1"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/privacy"
+                className="block text-gray-100 hover:text-gray-300 py-1"
+              >
+                Privacy
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
 };
 
-export default Footer;
-
+export default Footer;

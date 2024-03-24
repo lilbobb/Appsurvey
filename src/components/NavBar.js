@@ -21,7 +21,10 @@ const Navbar = () => {
       <nav className="container mx-auto flex items-center justify-between px-4 flex-wrap">
         {/* Text */}
         <div className="flex flex-row text-white text-2lg font-bold font-mono mt-2">
-          <img src="logo.jpg" alt="logo" className="ml-2 w-9" />
+          <Link to="/">
+            {" "}
+            <img src="logo.jpg" alt="logo" className="ml-2 w-9" />
+          </Link>
           Pioneer Vision Foundation
         </div>
 
