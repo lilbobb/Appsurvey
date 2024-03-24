@@ -88,7 +88,7 @@ function About() {
               <h2 className="text-xl font-bold mb-2 text-gray-950">
                 James Carr Walton
               </h2>
-              <p className="text-gray-700">Founder</p>
+              <p className="text-gray-700">Co-Founder</p>
               <p className="text-gray-600">
                 Walton Born James Carr Walton June 7, 1948 (age 75) Newport,
                 Arkansas, U.S. Alma mater University of Arkansas (BS)
@@ -116,7 +116,7 @@ function About() {
               <h2 className="text-xl font-bold mb-2 text-gray-950">
                 Lauren Beukes
               </h2>
-              <p className="text-gray-700">Founder</p>
+              <p className="text-gray-700">Co-Founder</p>
               <p className="text-gray-600">
                 Lauren Beukes at d Construct, 2012. Born 5 June 1976 (age 47)
                 Johannesburg, South Africa Occupation Writer Nationality South
