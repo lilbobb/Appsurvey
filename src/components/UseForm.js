@@ -47,7 +47,7 @@ class UserForm extends Component {
     return (
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <div className="flex-grow container mx-auto flex justify-center items-center">
+        <div className="flex-grow container mx-auto flex justify-center items-center mt-10 mb-10">
           <div className="w-70 p-8 shadow-md rounded-lg">
             <h1 className="text-2xl text-yellow-500 font-bold text-center mt-8 mb-4 font-mono">
               PIONEER VISION FOUNDATION SMALL COMMUNITIES GRANT OFFER
