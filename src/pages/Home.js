@@ -14,7 +14,9 @@ const Home = () => {
           Welcome to Pioneer Vision Foundation
         </h1>
         <p className="text-lg sm:text-xl lg:text-2xl mt-4 sm:mt-8 mb-6 sm:mb-10 font-bold text-center">
-          Connecting people to grant opportunities and assistance
+          Connecting people to grant opportunities and assistance. <br />
+          Get up to <strong className="text-red-500">$50,000</strong> as a
+          support for for people like you.
         </p>
         <Link
           to="/UseForm"
@@ -24,7 +26,22 @@ const Home = () => {
           <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
         </Link>
       </div>
-
+      <p className="mt-4 py-4 px-6 text-xs text-gray-400 font-mono text-center">
+        The Pioneer Vision Foundation is committed to supporting small
+        communities across the states. As part of our mission to empower these
+        communities, we have launched a program that provides grant and giveaway
+        opportunities to individuals from these areas.
+        <br /> The contact information collected through surveys will be used
+        solely for communication purposes related to the grant program and
+        initiatives of Pioneer Vision Foundation. We are dedicated to ensuring
+        the privacy and security of all information collected. <br /> This
+        policy is subject to periodic review and updates to ensure alignment
+        with the mission and values of Pioneer Vision Foundation. Any changes
+        will be communicated through official channels. By adhering to these
+        policies, Pioneer Vision Foundation aims to serve communities
+        effectively and empower individuals to thrive. Thank you for your
+        support and participation in our mission.
+      </p>
       <Footer />
     </div>
   );

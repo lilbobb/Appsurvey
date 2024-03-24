@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-r from-blue-400 to-purple-400 text-white">
       <Navbar />
-      <div className="container mx-auto py-8 px-4 max-w-2xl">
-        <h1 className="text-4xl text-yellow-300 font-bold mb-8">
+      <div className="container mx-auto py-8 px-4 max-w-2xl text-sm">
+        <h1 className="text-4xl text-yellow-300 font-bold mb-8 text-lg">
           {" "}
           Pioneer Vision Foundation Policy
         </h1>

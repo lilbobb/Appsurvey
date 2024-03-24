@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 font-mono py-8 rounded-md 3t2545rgh8uop
-    
-    /">
+    <footer className="bg-black text-gray-300 font-mono py-8 rounded-md h-auto text-xs">
       <div className="container mx-auto flex flex-wrap justify-around px-4">
         {/* Privacy Section */}
-        <div className="mb-8 md:mb-0">
-          <h2 className="text-xl font-bold mb-4">Privacy</h2>
+        <div className="mb-4 md:mb-0">
+          <h2 className="text-xl font-bold mb-2">Privacy</h2>
           <p className="text-sm">
             Your privacy is important to us. Read our{" "}
             <Link to="/privacy" className="text-blue-300 hover:text-blue-400">
@@ -19,8 +17,8 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="mb-8 md:mb-0">
-          <h2 className="text-xl font-bold mb-4">Contact Us Via</h2>
+        <div className="mb-4 md:mb-0">
+          <h2 className="text-xl font-bold mb-2">Contact us</h2>
           <p className="text-sm">
             Email:{" "}
             <a
@@ -46,7 +44,7 @@ const Footer = () => {
           <li>
             <Link
               to="/"
-              className="block text-white hover:text-gray-300 px-4 py-2 flex items-center"
+              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
             >
               Home
             </Link>
@@ -54,7 +52,7 @@ const Footer = () => {
           <li>
             <Link
               to="/about"
-              className="block text-white hover:text-gray-300 px-4 py-2 flex items-center"
+              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
             >
               About
             </Link>
@@ -62,9 +60,17 @@ const Footer = () => {
           <li>
             <Link
               to="/contact"
-              className="block text-white hover:text-gray-300 px-4 py-2 flex items-center"
+              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
             >
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/privacy"
+              className="block text-gray-100 hover:text-gray-300 px-4 py-1 flex items-center"
+            >
+              Privacy
             </Link>
           </li>
         </ul>
@@ -74,3 +80,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
