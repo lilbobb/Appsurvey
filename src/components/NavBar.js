@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="bg-blue-600 py-4 relative sticky top-0 z-50">
       <nav className="container mx-auto flex items-center justify-between px-4 flex-wrap">
         {/* Text */}
-        <div className="flex flex-row text-white text-2lg font-bold font-mono mt-2">
+        <div className="flex flex-row text-white text-2lg font-bold mt-2">
           <Link to="/">
             {" "}
             <img src="logo.jpg" alt="logo" className="ml-2 w-9" />
@@ -30,7 +30,7 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <ul
-          className={`absolute top-full right-0 md:relative md:flex md:space-x-10 md:space-x-8 flex-col md:flex-row md:items-center z-10 text-slate-300 font-roboto font-bold ${
+          className={`absolute top-full right-0 md:relative md:flex md:space-x-10 md:space-x-8 flex-col md:flex-row md:items-center z-10 text-slate-300 font-bold ${
             isOpen
               ? "flex md:mt-0 font-bold py-16 px-10 h-96 rounded-b-lg space-y-3 bg-gray-600"
               : "hidden md:flex"
