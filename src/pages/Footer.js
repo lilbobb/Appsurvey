@@ -22,11 +22,11 @@ const Footer = () => {
           <p className="text-sm md:text-xs">
             Email:{" "}
             <a
-              href="mailto:calerocolecarlos@pioneervisionfoundation.org"
+              href="mailto:info@pioneervisionfoundation.org"
               className="text-blue-300 hover:text-blue-400"
               aria-label="Email Us"
             >
-              calerocolecarlos@pioneervisionfoundation.org
+            info@pioneervisionfoundation.org
             </a>
           </p>
           <p className="text-sm md:text-xs">
