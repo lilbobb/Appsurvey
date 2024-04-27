@@ -68,6 +68,12 @@ const Footer = () => {
               >
                 Contact
               </Link>
+              <Link
+              to="/testimonials"
+              className="block text-gray-100 hover:text-gray-300 py-1"
+            >
+              Testimonials
+            </Link>
             </li>
             <li>
               <Link

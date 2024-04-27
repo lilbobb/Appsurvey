@@ -7,6 +7,7 @@ import {
   faHome,
   faInfoCircle,
   faAddressBook,
+  faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
         <ul
           className={`absolute top-full right-0 md:relative md:flex md:space-x-10 md:space-x-8 flex-col md:flex-row md:items-center z-10 text-slate-300 font-bold ${
             isOpen
-              ? "flex md:mt-0 font-bold py-16 px-10 h-96 rounded-b-lg space-y-3 bg-gray-600"
+              ? "flex md:mt-0 font-bold py-16 px-10 h-auto rounded-b-lg space-y-3 bg-gray-600"
               : "hidden md:flex"
           }`}
         >
@@ -70,6 +71,18 @@ const Navbar = () => {
                 className="block lg:hidden md:hidden mr-2"
               />
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/testimonials"
+              className="block text-white hover:text-gray-300 px-4 py-2 flex items-center"
+            >
+              <FontAwesomeIcon
+                icon={faQuoteRight}
+                className="block lg:hidden md:hidden mr-2"
+              />
+              Testimonials
             </Link>
           </li>
         </ul>

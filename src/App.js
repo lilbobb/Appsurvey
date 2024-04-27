@@ -9,6 +9,7 @@ import PrivacyPolicy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import { Protect } from "./components/Protect";
+import Testimonials from "./pages/Testimonials";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route exact path="/" element={<Home />} />
       <Route exact path="/about" element={<About />} />
       <Route exact path="/contact" element={<Contact />} />
+      <Route exact path="/testimonials" element={<Testimonials />} />
       <Route exact path="/useform" element={<UseForm />} />
       <Route exact path="/privacy" element={<PrivacyPolicy />} />
       <Route exact path="/login" element={<Login />} />
