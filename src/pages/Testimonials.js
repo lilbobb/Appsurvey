@@ -12,7 +12,7 @@ const Testimonials = () => {
         <p className="text-gray-800 mb-4">
           Hi there, I'm Sara! Once upon a time, I was all about teaching my
           wonderful students through online platforms. But you know what? I had
-          this big dream swirling in my mind—a dream of having a cozy community
+          this big dream swirling in my mind a dream of having a cozy community
           library where everyone could gather, explore, and learn together.
           Before I stumbled upon Pioneer Vision Foundation, chasing my dream
           felt like chasing a shooting star—beautiful but just out of reach. I
@@ -35,7 +35,7 @@ const Testimonials = () => {
         <p className="text-gray-800 mb-4">
           Hey there, I'm John. Living with blindness hasn't stopped me from
           dreaming big and wanting the best for my community. I've always had
-          this vision of a general park—a place where everyone, regardless of
+          this vision of a general park a place where everyone, regardless of
           age, ability, or reason, could come together and enjoy the simple
           pleasures of life. You see, I've always loved the sound of people
           around me, the laughter of children, the chatter of friends catching
