@@ -15,7 +15,7 @@ const Testimonials = () => {
           this big dream swirling in my mind a dream of having a cozy community
           library where everyone could gather, explore, and learn together.
           Before I stumbled upon Pioneer Vision Foundation, chasing my dream
-          felt like chasing a shooting star—beautiful but just out of reach. I
+          felt like chasing a shooting star beautiful but just out of reach. I
           had the passion, but the roadblocks seemed too big to overcome on my
           own. Money was tight, and making my dream a reality seemed like a
           distant dream itself. Then, one day, everything changed. I met the
