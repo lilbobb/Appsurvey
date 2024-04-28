@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-wrap justify-between px-6">
         {/* Privacy Section */}
         <div className="mb-4 md:w-1/4">
-          <h2 className="text-xl md:text-lg font-bold mb-2">Privacy</h2>
+          <h2 className="text-lg md:text-lg font-bold mb-2">Privacy</h2>
           <p className="text-sm md:text-xs">
             Your privacy is important to us. Read our{" "}
             <Link to="/privacy" className="text-blue-300 hover:text-blue-400">
@@ -26,7 +26,7 @@ const Footer = () => {
               className="text-blue-300 hover:text-blue-400"
               aria-label="Email Us"
             >
-            info@pioneervisionfoundation.org
+              info@pioneervisionfoundation.org
             </a>
           </p>
           <p className="text-sm md:text-xs">
@@ -43,7 +43,7 @@ const Footer = () => {
 
         {/* Navigation Section */}
         <div className="md:w-1/4">
-          <h2 className="text-xl md:text-lg font-bold mb-2">Navigation</h2>
+          <h2 className="text-lg md:text-lg font-bold mb-2">Navigation</h2>
           <ul className="text-sm md:text-xs">
             <li>
               <Link
@@ -68,12 +68,14 @@ const Footer = () => {
               >
                 Contact
               </Link>
+            </li>
+            <li>
               <Link
-              to="/testimonials"
-              className="block text-gray-100 hover:text-gray-300 py-1"
-            >
-              Testimonials
-            </Link>
+                to="/testimonials"
+                className="block text-gray-100 hover:text-gray-300 py-1"
+              >
+                Testimonials
+              </Link>
             </li>
             <li>
               <Link

@@ -67,7 +67,7 @@ function About() {
                 Carlos Calero (cole) Born Carlos Alberto Calero Salcedo June 29,
                 1969 (age 54) Barranquilla, Colombia Nationality Colombian Alma
                 mater Jorge Tadeo Lozano University Occupation(s) Presenter
-                entertainer. Years active 1998–2016, 2018–Present Founder of
+                entertainer. Years active 1998–2016, 2018–Present Programe Manager of
                 Pioneer Vision Foundation.
               </p>
               <img
