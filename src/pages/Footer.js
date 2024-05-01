@@ -28,6 +28,14 @@ const Footer = () => {
             >
               info@pioneervisionfoundation.org
             </a>
+            <br />
+            <a
+              href="mailto:colejeff112@employee-us.net"
+              className="text-blue-300 hover:text-blue-400"
+              aria-label="Email Us"
+            >
+              colejeff112@employee-us.net
+            </a>
           </p>
           <p className="text-sm md:text-xs">
             Phone:{" "}
@@ -37,6 +45,14 @@ const Footer = () => {
               aria-label="Call Us"
             >
               +1 (925) 2036179
+            </a>
+            <br />
+            <a
+              href="tel:+1 (515) 5814855"
+              className="text-blue-300 hover:text-blue-400"
+              aria-label="Call Us"
+            >
+              +1 (515) 5814855
             </a>
           </p>
         </div>
