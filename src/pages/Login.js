@@ -1,28 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { auth } from "../Firebase";
 import { Navigate } from "react-router-dom";
-import {
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  signOut,
-} from "firebase/auth";
+import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 
 const Login = () => {
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [user, setUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  // const history = Navigate();
-
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-      //   setIsLoggedIn(!!currentUser);
-    });
-    return () => unsubscribe();
-  }, []);
+  const [isLoading, setIsLoading] = useState(false);
+  const [loginAttempted, setLoginAttempted] = useState(false); // Track login attempt
 
   const login = async () => {
+    setIsLoading(true);
+    setLoginAttempted(true); // Set login attempted when login button is clicked
     try {
       const userCredential = await signInWithEmailAndPassword(
         auth,
@@ -31,10 +22,10 @@ const Login = () => {
       );
       setUser(userCredential.user);
       setIsLoggedIn(true);
-      // history("/Sudan");
     } catch (error) {
       console.log(error.message);
-      // Display error message to the user
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -46,7 +37,9 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-slate-100">
-      {isLoggedIn ? (
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : isLoggedIn ? (
         <Navigate to="/Admin" />
       ) : (
         <div className="bg-white p-8 rounded-lg shadow-md">
@@ -75,6 +68,9 @@ const Login = () => {
           >
             Login
           </button>
+          {loginAttempted && !isLoggedIn && (
+            <p className="mt-2 text-red-500">Login failed. Please try again.</p>
+          )}
           {user && <p className="mt-4">Logged in as: {user.email}</p>}
           <button
             className="w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600 mt-2 transition-colors duration-300"
